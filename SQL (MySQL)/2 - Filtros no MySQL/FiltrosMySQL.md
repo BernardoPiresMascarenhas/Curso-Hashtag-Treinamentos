@@ -76,3 +76,72 @@ WHERE Telefone IS NOT NULL;
 ```
 
 ##### Importante: não confunda null com vazio (' ')
+
+##### WHERE (LIKE)
+
+- Introdução: 
+  O comando `WHERE` pode ser usado em conjunto com o `LIKE` para filtrar as linhas que contenham determinado valor.
+
+##### Exemplos: 
+
+- Descubra quais clientes possuem um e-mail do gmail.
+
+```sql
+SELECT *
+FROM clientes
+WHERE Email LIKE '%gmail%';
+```
+
+- Descruba quis clientes possuem um e-mail terminado em '.br'
+
+```sql
+SELECT *
+FROM clientes 
+WHERE Email LIKE '%.br';
+```
+
+##### WHERE (IN E NOT IN)
+
+- Introdução:
+  O comando `WHERE` pode ser usado em conjunto com o `IN` ou `NOT IN` como uma alternativa ao operador lógico `OR`. Com ele é possivel filtrar apenas linhas que contenham um dos valores especificados em uma lista de valores.
+
+##### Exemplos:
+
+- Faça um filtro que retorne todos os produtos de uma das 3 marcas a seguir: DELL, SONY ou ALTURA.
+  
+```sql
+SELECT *
+FROM produtos
+WHERE Marca_Produto IN ('DELL', 'SONY', 'ALTURA');
+```
+
+- Faça um filtro que retorne todos os produtos que não seja de uma das 3 marcas a seguir: DELL, SONY ou ALTURA.
+
+```sql
+SELECT *
+FROM produtos
+WHERE Marca_Produto NOT IN ('DELL', 'SONY', 'ALTURA');
+```
+
+##### WHERE (BETWEEN)
+
+- Introdução:
+  O comando `WHERE` pode ser usado em conjunto com o `BETWEEN` para filtrar intervalos. Esses intervalos podem ser números ou de datas.
+
+##### Exemplos:
+
+- Faça um filtro que retorne todos os produtos com Preco_Unit entre R$1.000 e R$2.500.
+
+```sql
+SELECT *
+FROM produtos
+WHERE Preco_Unit BETWEEN 1000 AND 2500;
+```
+
+- Faça um filtro que retorne todos os clientes que nasceram entre 01/01/1995 e 31/12/1999.
+
+```sql
+SELECT *
+FROM clientes
+WHERE Data_Nascimento BETWEEN '1995-01-01' AND '1999-12-31';
+```
