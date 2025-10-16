@@ -38,11 +38,11 @@ Aqui está a trilha de aprendizado do curso. Marque os itens conforme for conclu
     -   [x] `WHERE`: Filtragem de dados com operadores (`=`, `>`, `<`, `<>`, `AND`, `OR`, `IN`, `BETWEEN`).
     -   [x] `LIKE`: Filtros com padrões de texto.
 
--   [ ] **Módulo 5: Funções de Agregação**
-    -   [ ] `COUNT()`: Contagem de registros.
-    -   [ ] `SUM()`: Soma de valores.
-    -   [ ] `AVG()`: Média de valores.
-    -   [ ] `MIN()` e `MAX()`: Valores mínimo e máximo.
+-   [x] **Módulo 5: Funções de Agregação**
+    -   [x] `COUNT()`: Contagem de registros.
+    -   [x] `SUM()`: Soma de valores.
+    -   [x] `AVG()`: Média de valores.
+    -   [x] `MIN()` e `MAX()`: Valores mínimo e máximo.
 
 -   [ ] **Módulo 6: Agrupamento de Dados**
     -   [ ] `GROUP BY`: Agrupando dados para análise.
