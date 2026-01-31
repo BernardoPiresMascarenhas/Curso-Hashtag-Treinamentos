@@ -1,0 +1,16 @@
+p {
+    color: white; 
+    background-color: rgb(86, 86, 236);
+}
+
+img {
+    margin: 10px;
+}
+
+.textoJs{
+    color: orange;
+}
+
+#h2Principal{
+    background-color: brown;
+}
