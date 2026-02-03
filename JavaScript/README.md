@@ -50,8 +50,8 @@ Aqui está a trilha de aprendizado do curso. Marque os itens conforme for conclu
 
 -   [x] **Módulo 8: Desenvolvimento Web (HTML/CSS)**
     -   [x] Estrutura HTML e Estilização CSS.
-    -   [ ] Box Model, Flexbox e Responsividade.
-    -   [ ] **Projeto:** Landing Page PizzaHash.
+    -   [x] Box Model, Flexbox e Responsividade.
+    -   [x] **Projeto:** Landing Page PizzaHash.
 
 -   [ ] **Módulo 9: DOM, Formulários e localStorage**
     -   [ ] Seleção e manipulação de elementos HTML.

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+   <meta charset="UTF-8" /> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+   <link rel="stylesheet" href="style.css" /> 
+   <title>Document</title> 
+</head> 
+   <body> 
+      <h2>Eventos em elementos HTML</h2> 
+
+      <!-- Exercicio 1-->
+      <p onmouseover="mudarCor(this, 'red')" onmouseout="onmouseOut(this, 'black')">Passe o mouse aqui para mudar a cor do texto.</p> 
+      
+      <!-- Exercicio 2-->
+      <button onclick="clicarBotao()">Clique aqui</button> 
+      
+      <!-- Exercicio 3-->
+      <input type="text" placeholder="Digite aqui" onfocus="campoEmFoco(this, 'Campo em foco')" onblur="campoForaDeFoco(this, '')"/> 
+      
+      <!-- Exercicio 4-->
+      <img src="imagem1.png" alt="Imagem misteriosa" onmouseover="onMouseOver(this, 'imagem2.png')" onmouseout="onMouseOut(this, 'imagem1.png')"/> 
+      
+      <script src="script.js"></script>
+   </body>
+</html>
+
+
+<!--
+Exercício 1: Mudança de cor ao passar o mouse sobre um elemento
+No elemento de parágrafo(p):
+Faça com que a cor do texto dentro do p mude para vermelho quando o mouse passar sobre ele. Quando o mouse sair do p, a cor do texto deve voltar para preto.
+-->
+
+<!--
+Exercício 2: Exibição de alerta ao clicar em um botão
+No elemento de botão(button):
+Ao clicar nesse botão, deve ser exibida uma caixa de alerta com a mensagem "Botão clicado!".
+-->
+
+<!--
+Exercício 3: Mostrar mensagem ao focar e desfocar um campo de entrada
+No elemento de input:
+Quando esse campo estiver em foco, a mensagem "Campo em foco" deve ser exibida dentro dele. Quando o campo perder o foco, o campo deve ficar vazio.
+-->
+
+<!--
+Exercício 4: Alteração de imagem ao passar o mouse sobre ela
+No elemento de imagem(img):
+Ao passar o mouse sobre a imagem misteriosa(imagem1), ela deve se transformar na imagem2, desvendando seu mistério. Quando o mouse sair da imagem, ela deve voltar à sua imagem original(imagem1).
+-->
