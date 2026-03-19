@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Prevent Default - addEventListener</title>
+</head>
+<body>
+   <h1>Prevent Default</h1>
+   <a href="https://portalhashtag.com/aulas/1706228042662x920796185669140500?colapsado=0&colapsado-ml=1&anterior=1706228042662x920796185669140500" id="meuLink">|Clique aqui para ir ate a pagina da hastag</a>
+
+   <script>
+      const link = document.getElementById('meuLink');
+
+      link.addEventListener("click", function(event){
+         event.preventDefault();
+         console.log("Clicou no link");
+      });
+
+      window.location.href = "https://www.google.com/";
+      
+   </script>
+</body>
+</html>
